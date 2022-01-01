@@ -1,0 +1,35 @@
+{
+  "name": "next-amazona",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@paypal/react-paypal-js": "^7.5.0",
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^3.7.0",
+    "cloudinary": "^1.27.1",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.3",
+    "multer": "^1.4.4",
+    "next": "12.0.7",
+    "next-connect": "^0.11.0",
+    "notistack": "^1.0.9",
+    "react": "17.0.2",
+    "react-chartjs-2": "^3.0.3",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.22.5",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
