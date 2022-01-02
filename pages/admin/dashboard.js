@@ -63,7 +63,6 @@ function AdminDashboard() {
     };
     fetchData();
   }, []);
-
   return (
     <Layout title="Admin Dashboard">
       <Grid container spacing={1}>
@@ -84,11 +83,11 @@ function AdminDashboard() {
                 <ListItem button component="a">
                   <ListItemText primary="Products"></ListItemText>
                 </ListItem>
-                <NextLink href="/admin/users" passHref>
-                  <ListItem button component="a">
-                    <ListItemText primary="Users"></ListItemText>
-                  </ListItem>
-                </NextLink>
+              </NextLink>
+              <NextLink href="/admin/users" passHref>
+                <ListItem button component="a">
+                  <ListItemText primary="Users"></ListItemText>
+                </ListItem>
               </NextLink>
             </List>
           </Card>

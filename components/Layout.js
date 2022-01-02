@@ -15,7 +15,6 @@ import {
   Button,
   Menu,
   MenuItem,
-  ClickAwayListener,
 } from '@material-ui/core';
 import useStyles from '../utils/styles';
 import { Store } from '../utils/Store';

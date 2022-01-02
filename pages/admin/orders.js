@@ -66,9 +66,8 @@ function AdminOrders() {
     };
     fetchData();
   }, []);
-
   return (
-    <Layout title="Admin Orders">
+    <Layout title="Orders">
       <Grid container spacing={1}>
         <Grid item md={3} xs={12}>
           <Card className={classes.section}>
@@ -87,11 +86,11 @@ function AdminOrders() {
                 <ListItem button component="a">
                   <ListItemText primary="Products"></ListItemText>
                 </ListItem>
-                <NextLink href="/admin/users" passHref>
-                  <ListItem button component="a">
-                    <ListItemText primary="Users"></ListItemText>
-                  </ListItem>
-                </NextLink>
+              </NextLink>
+              <NextLink href="/admin/users" passHref>
+                <ListItem button component="a">
+                  <ListItemText primary="Users"></ListItemText>
+                </ListItem>
               </NextLink>
             </List>
           </Card>
