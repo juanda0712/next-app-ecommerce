@@ -16,10 +16,10 @@ import {
   Checkbox,
   FormControlLabel,
 } from '@material-ui/core';
-import { getError } from '../../../utils/error';
-import { Store } from '../../../utils/Store';
-import Layout from '../../../components/Layout';
-import useStyles from '../../../utils/styles';
+import { getError } from '../../../../utils/error';
+import { Store } from '../../../../utils/Store';
+import Layout from '../../../../components/Layout';
+import useStyles from '../../../../utils/styles';
 import { Controller, useForm } from 'react-hook-form';
 import { useSnackbar } from 'notistack';
 
