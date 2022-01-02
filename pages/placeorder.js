@@ -22,7 +22,7 @@ import {
 } from '@material-ui/core';
 import { useRouter } from 'next/router';
 import useStyles from '../utils/styles';
-import CheckoutWizard from '../components/checkOutWizard';
+import CheckoutWizard from '../components/CheckOutWizard';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
 import axios from 'axios';
