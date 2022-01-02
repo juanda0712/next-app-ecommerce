@@ -15,10 +15,10 @@ import {
   TableCell,
   Link,
   CircularProgress,
+  Button,
   Card,
   List,
   ListItem,
-  Button,
 } from '@material-ui/core';
 import axios from 'axios';
 import { useRouter } from 'next/router';
@@ -136,7 +136,6 @@ function Order({ params }) {
       loadPaypalScript();
     }
   }, [order, successPay, successDeliver]);
-
   const { enqueueSnackbar } = useSnackbar();
 
   function createOrder(data, actions) {

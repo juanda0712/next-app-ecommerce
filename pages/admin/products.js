@@ -91,6 +91,9 @@ function AdminProducts() {
 
   const { enqueueSnackbar } = useSnackbar();
   const createHandler = async () => {
+    if (!window.confirm('Are you sure?')) {
+      return;
+    }
     try {
       dispatch({ type: 'CREATE_REQUEST' });
       const { data } = await axios.post(
@@ -109,6 +112,9 @@ function AdminProducts() {
     }
   };
   const deleteHandler = async (productId) => {
+    if (!window.confirm('Are you sure?')) {
+      return;
+    }
     try {
       dispatch({ type: 'DELETE_REQUEST' });
       await axios.delete(`/api/admin/products/${productId}`, {
@@ -121,7 +127,6 @@ function AdminProducts() {
       enqueueSnackbar(getError(err), { variant: 'error' });
     }
   };
-
   return (
     <Layout title="Products">
       <Grid container spacing={1}>

@@ -45,6 +45,7 @@ function reducer(state, action) {
       };
     case 'UPLOAD_FAIL':
       return { ...state, loadingUpload: false, errorUpload: action.payload };
+
     default:
       return state;
   }
@@ -95,7 +96,6 @@ function ProductEdit({ params }) {
       fetchData();
     }
   }, []);
-
   const uploadHandler = async (e) => {
     const file = e.target.files[0];
     const bodyFormData = new FormData();
@@ -152,7 +152,6 @@ function ProductEdit({ params }) {
       enqueueSnackbar(getError(err), { variant: 'error' });
     }
   };
-
   return (
     <Layout title={`Edit Product ${productId}`}>
       <Grid container spacing={1}>
@@ -173,11 +172,11 @@ function ProductEdit({ params }) {
                 <ListItem selected button component="a">
                   <ListItemText primary="Products"></ListItemText>
                 </ListItem>
-                <NextLink href="/admin/users" passHref>
-                  <ListItem button component="a">
-                    <ListItemText primary="Users"></ListItemText>
-                  </ListItem>
-                </NextLink>
+              </NextLink>
+              <NextLink href="/admin/users" passHref>
+                <ListItem button component="a">
+                  <ListItemText primary="Users"></ListItemText>
+                </ListItem>
               </NextLink>
             </List>
           </Card>
@@ -191,7 +190,7 @@ function ProductEdit({ params }) {
                 </Typography>
               </ListItem>
               <ListItem>
-                {loading && <CircularProgress />}
+                {loading && <CircularProgress></CircularProgress>}
                 {error && (
                   <Typography className={classes.error}>{error}</Typography>
                 )}
